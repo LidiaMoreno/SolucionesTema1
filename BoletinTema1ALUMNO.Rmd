@@ -90,7 +90,9 @@ package.check <- lapply(packages, FUN = function(x) {
 a.  Mira las características de ambos conjuntos usando la ayuda.
 ```{r}
 df_m <- mammals
+df_m
 df_a <- Animals2
+df_a
 ```
 
 b.  Usa las funciones **dim, head, tail, str** para una primera visión de los conjuntos de datos.
@@ -122,6 +124,7 @@ colnames(Animals2)
 d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los aminales que aparezcan en ambos conjuntos
 ```{r}
 commonAnimals <- intersect(mammals, Animals2)
+commonAnimals
 ```
 
 e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
