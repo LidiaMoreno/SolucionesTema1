@@ -7,19 +7,19 @@ params:
   lang: ES
 lang: "`r switch(params$lang, ES = 'es-ES', EN = 'en-US')`"
 output:
-  pdf_document:
-    toc: no
-    toc_depth: 3
-    number_sections: yes
-  html_notebook:
-    echo: yes
-    number_sections: yes
-    toc: yes
   html_document:
     echo: yes
     number_sections: yes
     theme: lumen
     toc: yes
+  html_notebook:
+    echo: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    toc: no
+    toc_depth: 3
+    number_sections: yes
 language:
   label:
     fig: 'Figura '
@@ -87,27 +87,19 @@ package.check <- lapply(packages, FUN = function(x) {
 
 <!-- -->
 
-a.  Mira la las características de ambos conjuntos usando la ayuda.
+a.  Mira las características de ambos conjuntos usando la ayuda.
+```{r}
+data("mammals")
+```
+
 b.  Usa las funciones **dim, head, tail, str** para una primera visión de los conjuntos de datos.
+```{r}
+
+```
+
 c.  Muestra los nombres de las filas y las columnas (**rownames**, **colnames**)
 
 ```{r}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ```
 
@@ -115,38 +107,15 @@ d.  Usa la función **intersect** y almacena en la variable *commonAnimals* los 
 
 ```{r}
 
-
-
-
-
-
 ```
 
 e.  Usa **setdiff** para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
-
 ```{r}
-
-
-
-
-
 
 ```
 
-e.  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
-
+f.  Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
 ```{r}
-
-
-
-
-
-
-
-
-
-
-
 
 ```
 
