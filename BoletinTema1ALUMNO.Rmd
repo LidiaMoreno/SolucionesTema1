@@ -156,21 +156,22 @@ qqPlot(log(Animals2$brain))
 3.  La función **library** sin argumentos abre una ventana y muestra las librerías que han sido instaladas.
 
     a.  Asigna el valor devuelto por esta función a la variable **libReturn** y observa su estructura.
+```{r}
+libReturn <- library()
+libReturn
+```
+
     b.  Uno de los elementos de la lista es un matriz de caracteres. Muestra por pantalla los 5 primeros elementos de esta matriz usando la función **head**.
+```{r}
+
+
+```
+
     c.  Determina el número de librerías que tienes instaladas.
-
-    ```{r}
-
+```{r}
 
 
-
-
-
-
-
-
-
-    ```
+```
 
 4.  En las transparencias del tema 1 se citan los primeros pasos a seguir cuando se analiza un nuevo conjunto de datos.
 
